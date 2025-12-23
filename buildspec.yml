@@ -6,9 +6,9 @@ phases:
       - aws deploy push \
         --application-name cicd-handson-app \
         --s3-location s3://cicd-workfinal/artifact.zip \
-        --source CICDハンズオン用資料/src
+        --source src
 
 artifacts:
   files:
     - '**/*'
-  base-directory: CICDハンズオン用資料/src
+  base-directory: src
